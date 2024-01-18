@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+
+  const todaysForecast = (fahrenheit) => {
+    let tempFahrenheit = fahrenheit;
+    let tempCelcius = Math.floor((tempFahrenheit - 32) * (5/9));
+    let tempKelvin = Math.floor(tempCelcius + 273.15);
+    return `Today's temperature is ${tempFahrenheit} degrees Fahrenheit, ${tempCelcius} degrees Celcius, and ${tempKelvin} degrees Kelvin.`;
+  }
+
+  console.log(todaysForecast(100));
+
+  const firstName = "Lee";
+  const lastName = "Jarzembak";
+  const age = 136;
+  const birthplace = "Earth";
+  const initials = firstName.charAt(0) + lastName.charAt(0);
+
+  const sayGreeting = (firstName, lastName, age, city) => {
+    let nameLength = lastName.length;
+    return `Hello! My Name is ${firstName} ${lastName}! I'm ${age} years old, and I'm from ${birthplace}. It's nice to meet you! -Signed ${initials}. ${lastName} is ${nameLength} characters long`;
+    
+  }
+
+  console.log(sayGreeting("Lee", "Jarzembak", 136, "Earth"))
+  
+
+  
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
